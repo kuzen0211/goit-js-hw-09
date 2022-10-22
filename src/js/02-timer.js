@@ -35,7 +35,7 @@ function onBtnClick() {
   btnStart.setAttribute('disabled', 'disabled');
   const timeId = setInterval(() => {
     let difTime;
-    newCurrrentDate = new Date();
+    const newCurrrentDate = new Date();
     difTime = startTime - newCurrrentDate;
     const componentsTime = convertMs(difTime);
     putDate(componentsTime);
