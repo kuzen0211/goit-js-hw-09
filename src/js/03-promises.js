@@ -27,7 +27,7 @@ const onReject = (position, delay) => {
   Notiflix.Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`);
 };
 
-function onFormSubmit() {
+function onFormSubmit(event) {
   event.preventDefault();
 
   const currentEvent = event.currentTarget;
